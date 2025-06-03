@@ -1239,6 +1239,9 @@ p.slide-numbering.left {
 .slide--11__bottle.sixth .vertical, .slide--11__bottle.eight .vertical {
   height: 14.5em;
 }
+.slide--11__bottle.fourth .vertical {
+  height: 3em;
+}
 .slide--11__bottle.first .horizontal, .slide--11__bottle.third .horizontal,
 .slide--11__bottle.fifth .horizontal, .slide--11__bottle.seventh .horizontal,
 .slide--11__bottle.nine .horizontal {
@@ -1268,6 +1271,7 @@ p.slide-numbering.left {
 .slide--11__bottle img.bottle--4 {
   width: 13em;
   min-width: 13em;
+  top: -1.65em;
 }
 .slide--11__bottle img.bottle--5 {
   top: 6.5em;
@@ -1307,8 +1311,8 @@ p.slide-numbering.left {
   left: 16.5%;
 }
 .slide--11__bottle.fourth {
-  top: -5em;
-  left: 22.5%;
+  top: -9em;
+  left: 22.8%;
 }
 .slide--11__bottle.fifth {
   top: 15.2em;
@@ -1630,7 +1634,7 @@ p.slide-numbering.left {
 .slide--11__bottle.first .vertical, .slide--11__bottle.third .vertical, .slide--11__bottle.fifth .vertical, .slide--11__bottle.seventh .vertical, .slide--11__bottle.nine .vertical {
   transform-origin: top center;
 }
-.slide--11__bottle.second .vertical, .slide--11__bottle.sixth .vertical, .slide--11__bottle.eight .vertical {
+.slide--11__bottle.second .vertical, .slide--11__bottle.fourth .vertical, .slide--11__bottle.sixth .vertical, .slide--11__bottle.eight .vertical {
   transform-origin: bottom center;
 }
 .slide--11__bottle .horizontal {

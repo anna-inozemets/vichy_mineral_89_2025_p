@@ -298,17 +298,17 @@ const slideActions = {
       $(this).addClass('active');
 
       gsap.to($(this).find('img'), { filter: 'blur(0em) grayscale(0) opacity(1)', duration: 0.75, delay: 0.5, ease: 'power2.out' });
-
-      if ($(this).find('.circle').length !== 0) {
-        gsap.to($(this).find('.circle'), { opacity: 1, duration: 0.25, delay: 1.15, scale: 1 });
-        gsap.to($(this).find('.vertical'), { opacity: 1, duration: 0.25, delay: 1.4, scaleY: 1 });
-        gsap.to($(this).find('.horizontal'), { opacity: 1, duration: 0.25, delay: 1.65, scaleX: 1 });
-        gsap.to($(this).find('p'), { opacity: 1, duration: 0.5, delay: 1.9 });
-      } else {
-        gsap.to($(this).find('p'), { opacity: 1, duration: 0.5, delay: 1.15 });
-      }
+      gsap.to($(this).find('.circle'), { opacity: 1, duration: 0.25, delay: 1.15, scale: 1 });
+      gsap.to($(this).find('.vertical'), { opacity: 1, duration: 0.25, delay: 1.4, scaleY: 1 });
+      gsap.to($(this).find('.horizontal'), { opacity: 1, duration: 0.25, delay: 1.65, scaleX: 1 });
+      gsap.to($(this).find('p'), { opacity: 1, duration: 0.5, delay: 1.9 });
 
       if ($('.slide--11__bottle.active').length === 9) {
+        nextButtonTimeout = setTimeout(() => {
+          $(nextSlideButton).removeClass(hiddenArrowClass);
+          $(prevSlideButton).removeClass(hiddenArrowClass);
+        }, 2.5 * 1000);
+
         lastSlideActionTimeout = setTimeout(() => {
           lastSlideAction();
         }, 7.5 * 1000);
